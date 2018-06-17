@@ -1,1 +1,6 @@
 /* style of jumbo.css */
+body{
+    display:grid;
+    margin:0;
+    padding:0;
+}
