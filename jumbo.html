@@ -13,52 +13,60 @@
         
         <title>Jumbo</title>
     </head>
-    <body>
+    <body class="container">
      <!-- sekcja główna -->
      
-      <section  class="container" id="main">
-        <div class="row">
-            <div class="col-sm-6">   
-                <div class="left">
-
-         <!-- sekcja treści -->
-                   <div class="logo">
-                       <img src="images/logo.png" alt="logo">
-                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                       <br>
-                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil deserunt ipsum explicabo voluptates</p>
-                       <button class="btn btn-lg">Learn More</button>
-                   </div>
+      <section class="container-fluid" id="main">
+        <div class="row">   
+         
+         <!-- sekcja treści -->              
+                <div class="col-6 content">
+                    <a href="#"><img src="images/logo.png" alt="logo" height="100"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#jumboNavbar" aria-controls="jumboNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="content">
+                    <p>We <span>digitalise</span><br/>your business process.</p>
+                    <button class="btn btn-prymary">Learn more</button>
+                    </div>
                 </div>
-            </div>
+            
         <!-- sekcja zdjęcia -->
-            <div class="col-sm-6 offset-6">
-                <div class="right">
-                       <nav>
-                           <ul> 
-                               <li><a href="#">Home</a></li> 
-                               <li><a href="#">Services</a></li> 
-                               <li><a href="#">Clients</a></li> 
-                               <li><a href="#">Contact</a></li>  
-                           </ul>
-                       </nav>
-                </div>
+                <div class="col-6 image-back">
+                   
+                    <ul class="navbar-nav float-right flex-row-reverse">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                    </ul>
+                  
             </div>
         </div>
-        </section>
+    </section>
         
         <!-- footer -->
-        <footer id="footer">
-            <div class="col-sm-6">
-                 <div class="inner1">lokalizacja</div>
+    <footer class="container-fluid" id="footer">
+        <div class="row align-items-end">
+            <div class="col">
+                    One of three columns
             </div>
-            <div class="col-sm-6 offset-sm-2">
-                <div class="inner2">klienci</div>
+            <div class="col">
+                One of three columns
             </div>
-            <div class="col-sm-6 offset-sm-6">
-                <div class="inner3">lata działalności</div>  
+            <div class="col">
+                    One of three columns
             </div>
-        </footer>
+        </div>
+    </footer>
          
           
                 
