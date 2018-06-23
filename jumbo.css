@@ -1,7 +1,7 @@
 /* style of jumbo.css */
 body{
-    margin: 0;
-    padding: `0;
+    
+    height: 100vh;
 }
 #footer {
     width: 1400px;
@@ -9,7 +9,7 @@ body{
     background-color: #30343f;
 }
 #main {
-    width: 100%;
+    width: 100vw;
 }
 
 .content {
@@ -21,12 +21,18 @@ body{
 .image-back{
     background-image: url('images/background_header.jpg');
     background-repeat: no-repeat;
-    background-size: 700px 713px;
-
+    background-size: cover;
+    background-position: right center;
+    width: 713px;
+    height: 711px;
+    position: relative;
 }
 ul{
     width: 445px;
     height: 53px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.26);
     background-color: #ffffff;
+    top: 81px;
+    position: absolute;
+    left:232px;
 }
