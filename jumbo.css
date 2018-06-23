@@ -1,20 +1,24 @@
 /* style of jumbo.css */
 body{
-    
     height: 100vh;
+    margin: 0;  
+    font-family: "Lato", sans-serif;
+
 }
 #footer {
-    width: 1400px;
+    width: 1298px;
     height: 140px;
     background-color: #30343f;
+    display: flex;
+    justify-content: space-between;
 }
 #main {
-    width: 100vw;
+    width: 1298px;
 }
 
 .content {
     width: 859px;
-    height: 700px;
+    height: 711px;
     background-color: #db5461;
     
 }
