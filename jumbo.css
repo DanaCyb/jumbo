@@ -58,8 +58,19 @@ footer {
 
 #cont button {
     margin: 50px 0 0 100px;
+    border-radius: 5px;
+    border: none;
     width: 200px;
     height: 60px;
+    background-color: brown;
+}
+
+#cont a{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+    color: aliceblue;
 }
 /*obraz*/
 
@@ -75,12 +86,24 @@ footer {
 
 /*menu*/
 
-ul{
+ul {
     width: 445px;
     height: 53px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.26);
     background-color: #ffffff;
-    top: 100px;
-    position: absolute;
-    left: 58px;
+    margin: 50px 0 0 100px;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    border-radius: 5px;
+}
+
+li {
+    justify-content: space-around;
+    margin: 20px;
+}
+
+li a {
+    text-decoration: none;
 }
