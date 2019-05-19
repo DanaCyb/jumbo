@@ -48,10 +48,22 @@ footer {
 /*treść*/
 
 .content {
-    width: 670px;
+    width: 620px;
     height: 470px;
     background-color: #db5461;
+
 }
+.content::before{
+    content:'';
+    display: block;
+    background-color: #db5461;
+    width: 150px;
+    height: 470px;
+    position: absolute;
+    left: 520px;
+    transform: skewX(-15deg);
+}
+
 .content a img{
     margin: 50px 0 0 100px;
 }
@@ -70,11 +82,12 @@ footer {
     background-color: brown;
 }
 
-#cont a{
+#cont .btn {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     text-decoration: none;
+    text-transform: uppercase;
     color: aliceblue;
 }
 /*obraz*/
@@ -86,17 +99,16 @@ footer {
     background-position: right center;
     width: 670px;
     height: 470px;
-    position: relative;
 }
 
 /*menu*/
 
 ul {
-    width: 445px;
+    width: 400px;
     height: 53px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.26);
     background-color: #ffffff;
-    margin: 50px 0 0 100px;
+    margin: 50px 0 0 150px;
     list-style: none;
     display: flex;
     flex-flow: row wrap;
