@@ -3,37 +3,76 @@
 
 
 body{
-    height: 100vh;
+    height: 80vh;
+    width: 1263px;
     margin: 0;  
     font-family: 'Montserrat', sans-serif;
-
 }
-#footer {
-    width: 1298px;
+
+.container{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+
+/*stopka*/
+
+footer {
+    width: 1263px;
     height: 140px;
     background-color: #30343f;
     display: flex;
-    justify-content: space-between;
-}
-#main {
-    width: 1280px;
+    flex-flow: row wrap;
+    justify-content:center;
 }
 
+.icon{
+
+}
+
+/*main*/
+
+.main{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:space-around;
+}
+
+/*treść*/
+
 .content {
-    width: 859px;
-    height: 711px;
+    width: 700px;
+    height: 700px;
     background-color: #db5461;
+}
+.content a {
+
+}
+
+
+#cont p {
     
 }
+
+#cont button {
+
+}
+/*obraz*/
+
 .image-back{
     background-image: url('images/background_header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right center;
-    width: 713px;
-    height: 711px;
+    width: 700px;
+    height: 700px;
     position: relative;
 }
+
+/*menu*/
+
 ul{
     width: 445px;
     height: 53px;
