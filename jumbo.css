@@ -142,11 +142,15 @@ li a {
     border: 0;
     border-top: 5px solid #fff;
     background: transparent;
-    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    /*position: relative;*/
 }
 .hamburger::before, .hamburger::after{
     content: '';
-    position: absolute;
+    /*position: absolute;*/
+    display: block;
     top:0;
     left: 0;
     width: 100%;
