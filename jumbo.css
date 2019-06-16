@@ -136,13 +136,35 @@ li a {
     padding: 20px;
 }
 
+.hamburger{
+    width: 40px;
+    height: 35px;
+    border: 0;
+    border-top: 5px solid #fff;
+    background: transparent;
+    position: relative;
+}
+.hamburger::before, .hamburger::after{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    border-top: 5px solid #fff;
+    transform: translateY(10px);
+}
+.hamburger::after{
+    transform: translateY(25px);
+}
 /*
 ##Device = Desktops
 ##Screen = 1281px to higher resolution desktops
 */
 
 @media (min-width: 1281px) {
-
+    .hamburger{
+        display: none;
+    }
 
 }
 
@@ -152,7 +174,9 @@ li a {
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-
+    .hamburger{
+        display: none;
+    }
 
 
 }
@@ -163,7 +187,9 @@ li a {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-
+    .hamburger{
+        display: none;
+    }
 
 
 }
@@ -174,20 +200,16 @@ li a {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-    body{ width: 100vw;}
-
+    body{
+        width: 100vw;}
     footer {
         width: 100vw;}
     .image-back {
-        display:none;
-    }
+        display:none;}
     .content {
-        width: 100vw;
-    }
-
+        width: 100vw;}
     .content::before{
-        display: none;
-    }
+        display: none;}
 
 
 }
