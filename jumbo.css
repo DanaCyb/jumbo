@@ -141,25 +141,24 @@ li a {
     height: 35px;
     border: 0;
     border-top: 5px solid #fff;
-    background: transparent;
-    display: flex;
+    background: gray;
+    display:block;
     flex-flow: row wrap;
-    justify-content: flex-end;
-    /*position: relative;*/
+    justify-content: center;
+    left:0;
+
 }
+/*
 .hamburger::before, .hamburger::after{
     content: '';
-    /*position: absolute;*/
     display: block;
-    top:0;
-    left: 0;
     width: 100%;
     border-top: 5px solid #fff;
     transform: translateY(10px);
 }
 .hamburger::after{
     transform: translateY(25px);
-}
+}*/
 /*
 ##Device = Desktops
 ##Screen = 1281px to higher resolution desktops
@@ -208,12 +207,18 @@ li a {
         width: 100vw;}
     footer {
         width: 100vw;}
-    .image-back {
-        display:none;}
     .content {
         width: 100vw;}
     .content::before{
         display: none;}
+    .image-back {
+        display: none;}
+    .navbar{
+        width: 45vw;
+        margin: 5px;}
+    .hamburger{
+
+    }
 
 
 }
@@ -224,9 +229,14 @@ li a {
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
-
-
-
+    .image-back {
+        width: 20vw;}
+    .content {
+        width: 80vw;}
+    .content::before{
+        display: none;}
+    .navbar{
+        display: none;}
 }
 
 /*
@@ -235,7 +245,11 @@ li a {
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
-
-
+    .image-back {
+        display:none;}
+    .content {
+        width: 100vw;}
+    .content::before{
+        display: none;}
 
 }
