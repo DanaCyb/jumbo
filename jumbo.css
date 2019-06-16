@@ -141,24 +141,25 @@ li a {
     height: 35px;
     border: 0;
     border-top: 5px solid #fff;
-    background: gray;
-    display:block;
-    flex-flow: row wrap;
-    justify-content: center;
-    left:0;
+    background: transparent;
+    position: relative;
+    left:-230px;
+    top:10px;
 
 }
-/*
+
 .hamburger::before, .hamburger::after{
     content: '';
-    display: block;
     width: 100%;
     border-top: 5px solid #fff;
     transform: translateY(10px);
+    position: absolute;
+    top:0;
+    left:0;
 }
 .hamburger::after{
     transform: translateY(25px);
-}*/
+}
 /*
 ##Device = Desktops
 ##Screen = 1281px to higher resolution desktops
@@ -190,9 +191,6 @@ li a {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .hamburger{
-        display: none;
-    }
 
 
 }
@@ -205,7 +203,7 @@ li a {
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     body{
         width: 100vw;}
-    footer {
+    footer, cotainer {
         width: 100vw;}
     .content {
         width: 100vw;}
@@ -213,11 +211,11 @@ li a {
         display: none;}
     .image-back {
         display: none;}
-    .navbar{
+   /* .navbar{
         width: 45vw;
-        margin: 5px;}
+        margin: 5px;}*/
     .hamburger{
-
+        left:-300px;
     }
 
 
@@ -230,13 +228,18 @@ li a {
 
 @media (min-width: 481px) and (max-width: 767px) {
     .image-back {
-        width: 20vw;}
-    .content {
+        display: none;}
+    .content, {
         width: 80vw;}
     .content::before{
         display: none;}
     .navbar{
         display: none;}
+    .hamburger{
+        left:-100px;
+        top: 70px;}
+    .container{
+        width: 100vw;}
 }
 
 /*
@@ -251,5 +254,11 @@ li a {
         width: 100vw;}
     .content::before{
         display: none;}
-
+    .hamburger{
+        left:-360px;
+        width: 80vw;
+        height: 80vh;
+    }
+    .container, body, footer{
+        width: 80vw;}
 }
