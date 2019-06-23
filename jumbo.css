@@ -69,7 +69,7 @@ footer {
     margin: 50px 0 0 100px;
 }
 
-#cont p {
+p {
     margin: 50px 0 0 100px;
     font-size: 26px;
     color: aliceblue;
@@ -77,12 +77,12 @@ footer {
     line-height: 2;
 }
 
-#cont span{
+span{
     color:  #30343f;
 }
 
 #cont button {
-    margin: 50px 0 0 100px;
+    margin: 10px 0 0 100px;
     border-radius: 35px;
     border-color: white;
     width: 200px;
@@ -90,7 +90,7 @@ footer {
     background-color: brown;
 }
 
-#cont .btn {
+.btn {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
@@ -203,8 +203,6 @@ li a {
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     body{
         width: 100vw;}
-    footer, cotainer {
-        width: 100vw;}
     .content {
         width: 100vw;}
     .content::before{
@@ -217,6 +215,44 @@ li a {
     .hamburger{
         left:-300px;
     }
+    footer{
+        width: 80vw;
+        flex-flow: row wrap;
+    }
+    .main {
+        width: 83.4vw;
+    }
+    .icon img{
+        margin: 60px 50px 10px 50px;
+        width: 30px;
+        height: 30px;
+    }
+    #cont p {
+        margin: 50px 0 0 100px;
+        font-size: 10px;
+        color: aliceblue;
+        text-transform: uppercase;
+        line-height: 2;
+    }
+
+    #cont button {
+        margin: 15px 0 0 100px;
+        border-radius: 35px;
+        border-color: white;
+        width: 100px;
+        height: 60px;
+        background-color: brown;
+    }
+
+    .btn {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: aliceblue;
+    }
+
 
 
 }
@@ -238,8 +274,46 @@ li a {
     .hamburger{
         left:-100px;
         top: 70px;}
-    .container{
-        width: 100vw;}
+    footer{
+        width: 80vw;
+        flex-flow: row wrap;
+    }
+    .main {
+        width: 83.4vw;
+    }
+    .icon img{
+        margin: 60px 50px 10px 50px;
+        width: 30px;
+        height: 30px;
+    }
+    #cont p {
+        margin: 50px 0 0 100px;
+        font-size: 10px;
+        color: aliceblue;
+        text-transform: uppercase;
+        line-height: 2;
+    }
+
+    #cont button {
+        margin: 5px 0 0 5px;
+        border-radius: 35px;
+        border-color: white;
+        width: 100px;
+        height: 60px;
+        background-color: brown;
+    }
+
+    .btn {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: aliceblue;
+    }
+
+
+
 }
 
 /*
@@ -255,10 +329,53 @@ li a {
     .content::before{
         display: none;}
     .hamburger{
-        left:-360px;
+        left: 100px;
         width: 80vw;
         height: 80vh;
     }
-    .container, body, footer{
+    .container, body,{
         width: 80vw;}
+    footer{
+        width: 80vw;
+        flex-flow: row wrap;
+    }
+    .main {
+        width: 83.4vw;
+    }
+    .icon img{
+        margin: 60px 50px 10px 50px;
+        width: 30px;
+        height: 30px;
+    }
+    .content a img{
+        margin: 10px 0 0 10px;
+    }
+
+    #cont p {
+        margin: 50px 0 0 100px;
+        font-size: 10px;
+        color: aliceblue;
+        text-transform: uppercase;
+        line-height: 2;
+    }
+
+   #cont button {
+        margin: 5px 0 0 5px;
+        border-radius: 35px;
+        border-color: white;
+        width: 100px;
+        height: 60px;
+        background-color: brown;
+    }
+
+    .btn {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: aliceblue;
+    }
+
+
 }
